@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e5eef1;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+body .container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 650px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 3px 14px 7px rgba(88, 86, 86, 0.41);
+          box-shadow: 4px 3px 14px 7px rgba(88, 86, 86, 0.41);
+}
+
+body .container .main-container {
+  margin-top: 2rem;
+  width: 600px;
+  text-align: center;
+}
+
+body .container .main-container h1 {
+  font-size: 3rem;
+}
+
+body .container .main-container .alert.danger {
+  background-color: #e04d4d;
+  border-radius: 5px;
+}
+
+body .container .main-container .alert.success {
+  background-color: #7edf7e;
+  border-radius: 5px;
+}
+
+body .container .main-container .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  margin-bottom: 2rem;
+}
+
+body .container .main-container .form-control .entered-input {
+  background-color: #d6dee9;
+  width: 500px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+body .container .main-container .form-control .submit-button {
+  background-color: #00c3ff;
+  width: 100px;
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+
+body .container .list-container {
+  width: 600px;
+  visibility: hidden;
+}
+
+body .container .list-container.show {
+  visibility: visible;
+}
+
+body .container .list-container .lists {
+  margin-top: 1rem;
+}
+
+body .container .list-container .lists .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .list-container .lists .list p {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+body .container .list-container .lists .list .button-container .edit-button {
+  background-color: transparent;
+  color: yellowgreen;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body .container .list-container .lists .list .button-container .delete-button {
+  background-color: transparent;
+  color: red;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body .container .list-container .all-delete-button {
+  color: red;
+  background-color: transparent;
+  font-weight: bold;
+  width: 600px;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=stil.css.map */

@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(229, 238, 241);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .container {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 650px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 4px 3px 14px 7px rgba(88, 86, 86, 0.41);
+
+
+        .main-container {
+            margin-top: 2rem;
+            width: 600px;
+            text-align: center;
+            h1 {
+                font-size: 3rem;
+            }
+
+            .alert {
+                
+                &.danger {
+                    background-color: rgb(224, 77, 77);
+                    border-radius: 5px;
+                }
+                
+                &.success {
+                    background-color: rgb(126, 223, 126);
+                    border-radius: 5px;
+                }
+            }
+
+            .form-control {
+                display: flex;
+                height: 35px;
+                margin-bottom: 2rem;
+
+            .entered-input {
+                background-color: rgb(214, 222, 233);
+                width: 500px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                
+            }
+
+            .submit-button {
+                background-color: rgb(0, 195, 255);
+                width: 100px;
+                color: white;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                cursor: pointer;
+            }
+            }
+        }
+        .list-container {
+            width: 600px;
+            visibility: hidden;
+
+
+            &.show {
+                visibility: visible;
+            }
+            .lists {
+                    margin-top: 1rem;
+                .list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    p{
+                        font-weight: bold;
+                        text-transform: capitalize;
+
+                    }
+
+                    .button-container {
+
+                        .edit-button {
+                            background-color: transparent;
+                            color: yellowgreen;
+                            border: none;
+                            font-size: 1rem;
+                            cursor: pointer;
+                        }
+
+                        .delete-button{
+                            
+                            background-color: transparent;
+                            color: red;
+                            border: none;
+                            font-size: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .all-delete-button {
+                color: red;
+                background-color: transparent;
+                font-weight: bold;
+                width: 600px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
